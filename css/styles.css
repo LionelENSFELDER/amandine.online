@@ -2714,6 +2714,19 @@ img.u-pull-left {
   position: relative;
 }
 
+.text-pretitle-name {
+  font-family: var(--font-1);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  margin-top: 0;
+  margin-left: .2rem;
+  margin-bottom: var(--vspace-0_5);
+  position: relative;
+}
+
 .text-pretitle.with-line {
   color: var(--color-1);
   padding-left: 6rem;
@@ -2732,7 +2745,7 @@ img.u-pull-left {
 }
 
 .text-huge-title {
-  --text-huge: 10.8rem;
+  --text-huge: 8.8rem;
   font-size: var(--text-huge);
   line-height: 1.0740;
   margin-top: 0;
@@ -3261,17 +3274,26 @@ img.u-pull-left {
   z-index: 1;
   list-style: none;
   display: flex;
+  flex-flow: row nowrap;
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .3em;
-  margin: 0;
-  padding: 0 0 0 9.6rem;
-  transform: rotate(-90deg) translateX(-50%);
-  transform-origin: left bottom;
-  position: absolute;
-  top: 50%;
-  left: calc(100% - 6rem);
+  /* margin: 0; */
+  /* padding: 0 0 0 9.6rem; */
+  /* transform: rotate(-90deg) translateX(-50%); */
+  /* transform-origin: left bottom; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: calc(100% - 6rem); */
+}
+
+.intro-social div a img {
+  margin-top: 7rem;
+  margin-right: 3rem;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid green; */
 }
 
 .intro-social li {
@@ -3382,7 +3404,7 @@ img.u-pull-left {
     width: 100%;
     flex-wrap: wrap;
     padding-left: 0;
-    padding-right: 8rem;
+    /* padding-right: 8rem; */
     transform: none;
     position: relative;
     left: var(--gutter);
@@ -3410,13 +3432,14 @@ img.u-pull-left {
   }
 
   .intro-social {
-    left: 1.4rem;
+    /* left: 1.4rem; */
   }
 }
 
 @media screen and (max-width: 400px) {
   .intro-content .text-huge-title {
-    font-size: var(--text-display-1);
+    /* font-size: var(--text-display-1); */
+    font-size: 40px;
     line-height: var(--vspace-2);
   }
 
@@ -3427,7 +3450,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 350px) {
   .intro-social {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -3877,7 +3900,7 @@ img.u-pull-left {
  * ## modal popup
  * ------------------------------------------------------------------- */
 .modal-popup {
-  max-width: 680px;
+  max-width: 1080px;
   background-color: white;
   font-size: calc(var(--text-size) * 0.9447);
   line-height: var(--vspace-0_875);
@@ -4170,7 +4193,7 @@ img.u-pull-left {
 
 .contact-links,
 .contact-social {
-  font-size: var(--text-md);
+  font-size: var(--text-size);
   font-weight: 300;
   line-height: var(--vspace-1_25);
   color: var(--color-text-light);
