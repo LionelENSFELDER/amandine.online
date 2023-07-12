@@ -3907,7 +3907,7 @@ img.u-pull-left {
   /* height: 60vh; */
   /* min-height: 400px; */
   /* max-width: 880px; */
-  background-color: white;
+  /* background-color: white; */
   font-size: calc(var(--text-size) * 0.9447);
   /* line-height: var(--vspace-0_875); */
   color: rgba(0, 0, 0, 0.75);
@@ -3932,6 +3932,11 @@ img.u-pull-left {
   object-fit: cover;
   margin-bottom: 0;
   max-height: 80vh;
+}
+
+.modal-popup object {
+  width: 80vw;
+  height: 80vh;
 }
 
 .modal-popup h5 {
