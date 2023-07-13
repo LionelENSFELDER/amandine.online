@@ -3939,6 +3939,11 @@ img.u-pull-left {
   height: 80vh;
 }
 
+.modal-popup iframe {
+  width: 80vw;
+  height: 80vh;
+}
+
 .modal-popup h5 {
   font-family: var(--font-1);
   font-size: var(--text-size);
