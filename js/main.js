@@ -204,7 +204,7 @@
             opacity: [0, 1],
             translateY: [100, 0],
             delay: anime.stagger(400, { start: 200 }),
-            duration: 800,
+            duration: 400,
             easing: 'easeInOutCubic',
             begin: function (anim) {
               current.classList.add("ss-animated");
@@ -220,10 +220,13 @@
   /* Swiper
    * ------------------------------------------------------ */
   const ssSwiper = function () {
-
     const mySwiper = new Swiper('.swiper-container', {
-
       slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -236,17 +239,16 @@
         },
         // when window width is > 800px
         801: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 32
         },
         // when window width is > 1200px
         1201: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 80
         }
       }
     });
-
   }; // end ssSwiper
 
 
@@ -280,6 +282,10 @@
       link.addEventListener("click", function (event) {
         event.preventDefault();
         modals[index].show();
+        // TODO : change for dynamic activation of swiper for photo project
+        if (index === 0) {
+          ssSwiper();
+        }
       });
     });
 
@@ -361,11 +367,11 @@
     ssMobileMenu();
     ssScrollSpy();
     ssViewAnimate();
-    ssSwiper();
     ssLightbox();
     ssAlertBoxes();
     ssMoveTo();
     getYear();
+
   })();
 
 })(document.documentElement);
