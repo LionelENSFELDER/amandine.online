@@ -283,7 +283,7 @@
         event.preventDefault();
         modals[index].show();
         // TODO : change for dynamic activation of swiper for photo project
-        if (index === 0) {
+        if (index === 0 || index == 4) {
           ssSwiper();
         }
       });

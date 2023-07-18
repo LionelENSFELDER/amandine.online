@@ -3863,6 +3863,12 @@ img.u-pull-left {
   font-size: var(--text-lg);
 }
 
+.folio-list__item-description {
+  font-size: var(--text-xs);
+  margin: 0;
+  line-height: 2.2rem;
+}
+
 .folio-list__item-cat {
   font-size: var(--text-sm);
   color: var(--color-text-light);
