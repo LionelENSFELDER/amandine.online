@@ -39,4 +39,4 @@ jobs:
           # Local directory
           localDir: "./" # optional, default is .
           # Remote directory
-          remoteDir: "www" # optional, default is .
+          remoteDir: "./" # optional, default is .
